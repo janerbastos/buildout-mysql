@@ -1,0 +1,22 @@
+[mysqld]
+basedir   = ${cnf:basedir}
+datadir   = ${cnf:datadir}
+port      = ${cnf:port} 
+socket    = ${cnf:sock}
+pid-file  = ${cnf:pid}
+user      = ${cnf:user}
+log-error = ${cnf:err}
+
+[mysqld_safe]
+basedir   = ${cnf:basedir}
+datadir   = ${cnf:datadir}
+log-error = ${cnf:err}
+pid-file  = ${cnf:pid}
+user      = ${cnf:user}
+socket    = ${cnf:sock}
+port      = ${cnf:port}
+
+[client]
+port      = ${cnf:port}
+socket    = ${cnf:sock}
+pid-file  = ${cnf:pid}
