@@ -59,7 +59,7 @@ slow-query-log                 = 1
 slow-query-log-file            = ${cnf:log}/mysql-show.log
 
 [mysqld_safe]
-log-error = ${cnf:err}
-pid-file  = ${cnf:pid}
-user      = ${cnf:user}
+log-error                      = ${cnf:log}/mysql-error.log
+pid-file                       = ${cnf:pid}
+user                           = ${cnf:user}
 
